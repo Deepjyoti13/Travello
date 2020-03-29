@@ -1,0 +1,233 @@
+{% load static %}
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+
+:root{
+	--snigle-font:"Sniglet",cursive;
+	--Rubik:"Rubik",cursive;
+	--Patua:"Patua",cursive;
+	--Lobster:"Lobster",cursive;
+	--light-black: #2e2c2caf;
+	--bggradient: linear-gradient(
+			to bottom,
+			#13495D,#01FECC
+		);
+	--light-gray: rgba(255,255,255,0.877);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.navtag {
+    font-family: 'Bangers', cursive;
+}
+
+.dot-transparent {
+    color: transparent;
+}
+
+.menubar {
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.container-fluid a{
+	font-family: var(--snigle-font);
+	font-size: 0.9em;
+	color: black;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background: white;
+	min-width: 160px;
+	box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover{
+	background: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.container-fluid .nav-item:last-child{
+	padding-right: 1.5em;
+}
+
+.container-fluid .nav-item {
+    font-size: 1em;
+    padding: 1em;
+    display: block;
+}
+
+.nav-item {
+    padding: 0px;
+}
+
+.container-fluid .navbar-brand{
+	padding-left: 8rem;
+}
+
+.container-fluid .nav-link:hover{
+	color: black;
+}
+
+.page1 {
+    background: linear-gradient(135deg, rgba(220, 220, 220, 0.5) 0%, rgba(220, 220, 220, 0.5) 3.571%,rgba(213, 213, 213, 0.5) 3.571%, rgba(213, 213, 213, 0.5) 7.142%,rgba(205, 205, 205, 0.5) 7.142%, rgba(205, 205, 205, 0.5) 10.713%,rgba(198, 198, 198, 0.5) 10.713%, rgba(198, 198, 198, 0.5) 14.284%,rgba(191, 191, 191, 0.5) 14.284%, rgba(191, 191, 191, 0.5) 17.855%,rgba(183, 183, 183, 0.5) 17.855%, rgba(183, 183, 183, 0.5) 21.426%,rgba(176, 176, 176, 0.5) 21.426%, rgba(176, 176, 176, 0.5) 24.997%,rgba(169, 169, 169, 0.5) 24.997%, rgba(169, 169, 169, 0.5) 28.568%,rgba(161, 161, 161, 0.5) 28.568%, rgba(161, 161, 161, 0.5) 32.139%,rgba(154, 154, 154, 0.5) 32.139%, rgba(154, 154, 154, 0.5) 35.71%,rgba(147, 147, 147, 0.5) 35.71%, rgba(147, 147, 147, 0.5) 39.281%,rgba(139, 139, 139, 0.5) 39.281%, rgba(139, 139, 139, 0.5) 42.852%,rgba(132, 132, 132, 0.5) 42.852%, rgba(132, 132, 132, 0.5) 46.423%,rgba(125, 125, 125, 0.5) 46.423%, rgba(125, 125, 125, 0.5) 49.994%,rgba(117, 117, 117, 0.5) 49.994%, rgba(117, 117, 117, 0.5) 53.565%,rgba(110, 110, 110, 0.5) 53.565%, rgba(110, 110, 110, 0.5) 57.136%,rgba(103, 103, 103, 0.5) 57.136%, rgba(103, 103, 103, 0.5) 60.707%,rgba(95, 95, 95, 0.5) 60.707%, rgba(95, 95, 95, 0.5) 64.278%,rgba(88, 88, 88, 0.5) 64.278%, rgba(88, 88, 88, 0.5) 67.849%,rgba(81, 81, 81, 0.5) 67.849%, rgba(81, 81, 81, 0.5) 71.42%,rgba(73, 73, 73, 0.5) 71.42%, rgba(73, 73, 73, 0.5) 74.991%,rgba(66, 66, 66, 0.5) 74.991%, rgba(66, 66, 66, 0.5) 78.562%,rgba(59, 59, 59, 0.5) 78.562%, rgba(59, 59, 59, 0.5) 82.133%,rgba(51, 51, 51, 0.5) 82.133%, rgba(51, 51, 51, 0.5) 85.704%,rgba(44, 44, 44, 0.5) 85.704%, rgba(44, 44, 44, 0.5) 89.275%,rgba(37, 37, 37, 0.5) 89.275%, rgba(37, 37, 37, 0.5) 92.846%,rgba(29, 29, 29, 0.5) 92.846%, rgba(29, 29, 29, 0.5) 96.417%,rgba(22, 22, 22, 0.5) 96.417%, rgba(22, 22, 22, 0.5) 99.988%),linear-gradient(45deg, rgb(211, 211, 211) 0%, rgb(211, 211, 211) 3.571%,rgb(205, 205, 205) 3.571%, rgb(205, 205, 205) 7.142%,rgb(199, 199, 199) 7.142%, rgb(199, 199, 199) 10.713%,rgb(193, 193, 193) 10.713%, rgb(193, 193, 193) 14.284%,rgb(187, 187, 187) 14.284%, rgb(187, 187, 187) 17.855%,rgb(182, 182, 182) 17.855%, rgb(182, 182, 182) 21.426%,rgb(176, 176, 176) 21.426%, rgb(176, 176, 176) 24.997%,rgb(170, 170, 170) 24.997%, rgb(170, 170, 170) 28.568%,rgb(164, 164, 164) 28.568%, rgb(164, 164, 164) 32.139%,rgb(158, 158, 158) 32.139%, rgb(158, 158, 158) 35.71%,rgb(152, 152, 152) 35.71%, rgb(152, 152, 152) 39.281%,rgb(146, 146, 146) 39.281%, rgb(146, 146, 146) 42.852%,rgb(140, 140, 140) 42.852%, rgb(140, 140, 140) 46.423%,rgb(134, 134, 134) 46.423%, rgb(134, 134, 134) 49.994%,rgb(129, 129, 129) 49.994%, rgb(129, 129, 129) 53.565%,rgb(123, 123, 123) 53.565%, rgb(123, 123, 123) 57.136%,rgb(117, 117, 117) 57.136%, rgb(117, 117, 117) 60.707%,rgb(111, 111, 111) 60.707%, rgb(111, 111, 111) 64.278%,rgb(105, 105, 105) 64.278%, rgb(105, 105, 105) 67.849%,rgb(99, 99, 99) 67.849%, rgb(99, 99, 99) 71.42%,rgb(93, 93, 93) 71.42%, rgb(93, 93, 93) 74.991%,rgb(87, 87, 87) 74.991%, rgb(87, 87, 87) 78.562%,rgb(81, 81, 81) 78.562%, rgb(81, 81, 81) 82.133%,rgb(76, 76, 76) 82.133%, rgb(76, 76, 76) 85.704%,rgb(70, 70, 70) 85.704%, rgb(70, 70, 70) 89.275%,rgb(64, 64, 64) 89.275%, rgb(64, 64, 64) 92.846%,rgb(58, 58, 58) 92.846%, rgb(58, 58, 58) 96.417%,rgb(52, 52, 52) 96.417%, rgb(52, 52, 52) 99.988%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.pg-1 {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.sitetitle {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 17vmin;
+    padding: 0;
+    margin: 0;
+}
+
+.facpg1 {
+    width: 45vw;
+}
+
+.desc {
+    position: relative;
+    top: 10vh;
+    overflow: hidden;
+}
+
+.box1 {
+    width: 25rem;
+    height: 25rem;
+    border: 25px solid rgba(183, 183, 183, 0.5);
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    overflow: hidden;
+    z-index: 0;
+}
+.box2 {
+    width: 10rem;
+    height: 10rem;
+    border: 20px solid rgba(182, 172, 218, 0.7);
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.page2 {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url({% static 'Background/EventBackground.jpg' %});
+    background-size: cover;
+}
+
+.activity-container {
+	background: rgba(0,0,0,0.65);
+	height: 100%;
+	width: 100%;
+	padding-top: 15vmin;
+}
+
+.pg2title h1{
+    height: 5vh;
+    text-align: center;
+    font-family: var(--Lobster);
+    top: 0.1rem;
+    position: relative;
+    z-index: 5;
+}
+
+.pg2title p{
+    top: 2rem;
+    position: relative;
+    text-align: center;
+    font-family: 'Homemade Apple', cursive;
+    z-index: 5;
+}
+
+.pg2row {
+    padding: 25px;
+    color: whitesmoke;
+}
+
+.pg2event {
+    font-family: 'Pacifico', cursive;
+    position: relative;
+	z-index: 1;
+    height: 10rem;
+    padding-top: 3.5vmin;
+    text-align: center;
+	margin: auto;
+	border-radius: .5em;
+}
+
+.pg2para1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+}
+
+.pg2para2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.Mandala-container {
+    opacity: 0.5;
+}
+
+.Mandala {
+    width: auto;
+    height: auto;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 10s linear 2s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {-webkit-transform: rotate(0deg);} /* Safari */
+    to {-webkit-transform: rotate(360deg);} /* Safari */
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+  
+@keyframes mymove {
+    from {-webkit-transform: rotate(0deg);} /* Safari */
+    to {-webkit-transform: rotate(360deg);} /* Safari */
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);} 
+}

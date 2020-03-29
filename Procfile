@@ -1,0 +1,1 @@
+web: gunicorn Trial2.wsgi --log-file
