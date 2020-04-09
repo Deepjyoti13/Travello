@@ -75,7 +75,7 @@ WSGI_APPLICATION = 'Trial2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Trial2',
         'USER': 'root',
         'PASSWORD': '',
